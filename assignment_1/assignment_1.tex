@@ -28,32 +28,31 @@
 
 {\Large \underline{Solution}: \newline\newline }\par
 Let,
-\begin{center}$R =\left [\begin{array}{cc}\cos A &  -\sin A \\
+\begin{center}$R(A) =\left [\begin{array}{cc}\cos A &  -\sin A \\
 \sin A & \cos A\end{array}\right ]$\newline\end{center}\par
 
 The matrix expression in the question can be written as
 
 \begin{center}
-$\sin A\left [\begin{array}{cc}0 &  -1 \\
-1 & 0\end{array}\right ]R^{ -1} +\cos A \ast R^{ -1}$\newline 
+$\sin A \ast R(\pi/2 - A) +\cos A \ast R( -A)$\newline 
 \end{center}\par
 
-Taking $R^{ -1}$ common
+Multiplying both the terms
 
 \begin{center}
-$\left (\sin A\left [\begin{array}{cc}0 &  -1 \\
-1 & 0^{}\end{array}\right ] +\cos A\left [\begin{array}{cc}1 & 0 \\
-0 & 1\end{array}\right ]\right )R^{ -1}$\newline
+\flushleft $\left [\begin{array}{cc}\sin^2 A &  -\sin A\cos A \\
+\sin A\cos A & \sin^2 A\end{array}\right ] +$\flushright $\left [\begin{array}{cc}\cos^2 A & \cos A\sin A \\
+ -\cos A\sin A & \cos^2 A\end{array}\right ]$\newline
 \end{center}\par
 
-Simplifying the expression
+Adding the matrices
 
 \begin{center}
-$\left [\begin{array}{cc}\cos A &  -\sin A \\
-\sin A & \cos A\end{array}\right ]R^{ -1}$\linebreak\relax
+$\left [\begin{array}{cc}\sin^2 A + \cos^2 A &  -\sin A \cos A +\cos A \sin A \\
+ \sin A \cos A -\cos A \sin A & \sin^2 A + \cos^2 A\end{array}\right ]$\linebreak
 \end{center}\par
 
-Multiplying the matrices finally gives
+Simplifying the elements finally gives
 
 \begin{center}
 $\left [\begin{array}{cc}1 & 0 \\
