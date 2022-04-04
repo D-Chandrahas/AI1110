@@ -10,6 +10,7 @@
 \usepackage{xcolor}
 \graphicspath{{images/}}
 \DeclareGraphicsExtensions{.pdf,.eps,.ps,.png,.jpg,.jpeg}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \begin{document}
 \title{\textbf{AI1110 Assignment 1} }
 \author{\textbf{Dondapati Chandrahas Reddy}\\\textbf{AI21BTECH11010}}
@@ -32,10 +33,10 @@ Let,
 The matrix expression in the question can be written as
 
 \begin{center}
-$\sin A \ast R(\pi/2 - A) +\cos A \ast R( -A)$\newline 
+$\myvec{\sin A & \cos A} \myvec{R(\pi/2 - A) \\ R( -A)}$\newline 
 \end{center}\par
 
-Multiplying both the terms
+Taking dot product of the vectors
 
 \begin{center}
 \flushleft $\left [\begin{array}{cc}\sin^2 A &  -\sin A\cos A \\
