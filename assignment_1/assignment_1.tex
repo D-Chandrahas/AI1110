@@ -1,60 +1,55 @@
 
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb,amsmath,mathtools,xcolor,graphicx,xspace,colortbl,ragged2e,rotating}
-\usepackage{boxedminipage}
-\usepackage{graphics}
-\usepackage{ragged2e}
-\usepackage{wrapfig}
-\usepackage{xcolor}
-\graphicspath{{images/}}
-\DeclareGraphicsExtensions{.pdf,.eps,.ps,.png,.jpg,.jpeg}
+
+\usepackage{amsfonts,amsmath,amssymb}
+
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
 \begin{document}
-\title{\textbf{AI1110 Assignment 1} }
-\author{\textbf{Dondapati Chandrahas Reddy}\\\textbf{AI21BTECH11010}}
+
+\title{\textbf{AI1110 Assignment 2} }
+\author{\textbf{Dondapati Chandrahas Reddy}\\ \textbf{AI21BTECH11010}\\ ICSE Grade 10 2019 paper}
+
 \maketitle
-\begin{center}
-{ ICSE Grade 10 2019 paper}\end{center}\par
-{ \section {Question 3 (a) \newline}}
-{\Large \underline{Question}:\newline}
 
-Simplify 
-\begin{center}$\sin A\left [\begin{array}{cc}\sin A &  -\cos A \\
-\cos A & \sin A\end{array}\right ]+\cos A\left [\begin{array}{cc}\cos A &  \sin A \\
--\sin A & \cos A\end{array}\right ]$\newline\end{center}\par
+{\section {Question 3 (a) \newline}}
+{\large \underline{Question}:\newline}
 
-{\Large \underline{Solution}: \newline }\par
+Simplify
+
+\begin{equation*}
+\sin A\myvec{\sin A &  -\cos A \\ \cos A & \sin A} + \cos A \myvec{\cos A &  \sin A \\ -\sin A & \cos A}
+\end{equation*}\\
+
+{\large \underline{Solution}:}\\
+
 Let,
-\begin{center}$R(\theta) =\left [\begin{array}{cc}\cos \theta &  -\sin \theta \\
-\sin \theta & \cos \theta\end{array}\right ]$\newline\end{center}\par
+\begin{equation*}
+R(\theta) = \myvec{\cos \theta &  -\sin \theta \\ \sin \theta & \cos \theta}
+\end{equation*}\\
 
 The matrix expression in the question can be written as
 
-\begin{center}
-$\myvec{\sin A & \cos A} \myvec{R(\pi/2 - A) \\ R( -A)}$\newline 
-\end{center}\par
+\begin{equation*}
+\myvec{\sin A & \cos A} \myvec{R(\pi/2 - A) \\ R( -A)}
+\end{equation*}\\
 
 Taking dot product of the vectors
 
-\begin{center}
-\flushleft $\left [\begin{array}{cc}\sin^2 A &  -\sin A\cos A \\
-\sin A\cos A & \sin^2 A\end{array}\right ] +$\flushright $\left [\begin{array}{cc}\cos^2 A & \cos A\sin A \\
- -\cos A\sin A & \cos^2 A\end{array}\right ]$\newline
-\end{center}\par
+\begin{equation*}
+\myvec{\sin^2 A &  -\sin A\cos A \\ \sin A\cos A & \sin^2 A} +\myvec{\cos^2 A & \cos A\sin A \\ -\cos A\sin A & \cos^2 A}
+\end{equation*}\\
 
 Adding the matrices
 
-\begin{center}
-$\left [\begin{array}{cc}\sin^2 A + \cos^2 A &  -\sin A \cos A +\cos A \sin A \\
- \sin A \cos A -\cos A \sin A & \sin^2 A + \cos^2 A\end{array}\right ]$\linebreak
-\end{center}\par
+\begin{equation*}
+\myvec{\sin^2 A + \cos^2 A &  -\sin A \cos A +\cos A \sin A \\ \sin A \cos A -\cos A \sin A & \sin^2 A + \cos^2 A}
+\end{equation*}\\
 
 Simplifying the elements finally gives
 
-\begin{center}
-$\left [\begin{array}{cc}1 & 0 \\
-0 & 1\end{array}\right ]$
-\end{center}\par
+\begin{equation*}
+\myvec{1 & 0 \\ 0 & 1}
+\end{equation*}\\
+
 \end{document}
