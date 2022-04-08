@@ -4,6 +4,7 @@
 \usepackage{amsfonts,amsmath,amssymb}
 
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
 
 \begin{document}
 
@@ -26,14 +27,14 @@ Simplify
 
 Let,
 \begin{equation*}
-	R(\theta) = \myvec{\cos \theta &  -\sin \theta \\ \sin \theta & \cos \theta}
+	\vec{R}(\theta) = \myvec{\cos \theta &  -\sin \theta \\ \sin \theta & \cos \theta} ,\, \vec{I} = \myvec{1 & 0 \\ 0 & 1} ,\, \vec{J} = \myvec{0 & -1 \\ 1 & 0}
 \end{equation*}\\
 
 The matrix expression in the question can be written as
 
 \begin{equation*}
-	\myvec{\sin A & \cos A} \myvec{R(\pi/2 - A) \\ R( -A)}
-\end{equation*}\\
+	\myvec{\sin A & \cos A} \left( \vec{R}(A) \myvec{\vec{J} \\ \vec{I}} \right)
+\end{equation*}
 
 Taking dot product of the vectors
 
