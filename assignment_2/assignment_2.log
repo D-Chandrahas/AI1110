@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  8 APR 2022 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  10 APR 2022 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -221,6 +221,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
 LaTeX Font Info:    Calculating math sizes for size <22> on input line 31.
 [1{C:/Users/chand/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
@@ -230,12 +240,12 @@ LaTeX Font Info:    Calculating math sizes for size <22> on input line 31.
 (assignment_2.aux) ) 
 Here is how much of TeX's memory you used:
  2612 strings out of 478582
- 43121 string characters out of 2844344
- 335377 words of memory out of 3000000
+ 43119 string characters out of 2844344
+ 336377 words of memory out of 3000000
  20820 multiletter control sequences out of 15000+600000
  506588 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,14n,62p,230b,229s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 54i,14n,62p,230b,228s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/chand/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/chand/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmex10.pfb><C:/Users/chand/AppData/Local/Programs/MiKTeX/fonts/typ
@@ -245,7 +255,7 @@ fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/chand/AppData/Local/Programs
 rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/chand/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/chand/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on assignment_2.pdf (1 page, 70586 bytes).
+Output written on assignment_2.pdf (1 page, 71647 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

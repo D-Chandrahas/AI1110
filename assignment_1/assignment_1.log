@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  8 APR 2022 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  10 APR 2022 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -228,20 +228,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
  []
 
 
-Overfull \hbox (23.88257pt too wide) detected at line 31
-\OT1/cmr/bx/n/12 R\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R\OT1/cmr/m/n/12 ) = [] \
-OML/cmm/m/it/12 ;  \OT1/cmr/bx/n/12 I \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 ;  
-\OT1/cmr/bx/n/12 J \OT1/cmr/m/n/12 = []
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
 Overfull \hbox (50.2366pt too wide) detected at line 43
-[] \OT1/cmr/m/n/12 + []
+[][] \OT1/cmr/m/n/12 + []
  []
 
 
@@ -251,7 +249,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
 
 Overfull \hbox (31.23639pt too wide) detected at line 49
-[]
+[][]
  []
 
 
@@ -267,17 +265,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 [1{C:/Users/chand/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
-
 ]
 (assignment_1.aux) ) 
 Here is how much of TeX's memory you used:
  2497 strings out of 478582
  40971 string characters out of 2844344
- 339001 words of memory out of 3000000
+ 341001 words of memory out of 3000000
  20707 multiletter control sequences out of 15000+600000
  503790 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,8n,62p,213b,221s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 54i,14n,62p,210b,221s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/chand/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/chand/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb><C:/Users/chand/AppData/Local/Programs/MiKTeX/fonts/typ
@@ -289,7 +286,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/chan
 d/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
 sers/chand/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/U
 sers/chand/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on assignment_1.pdf (1 page, 92951 bytes).
+Output written on assignment_1.pdf (1 page, 93653 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
