@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  10 APR 2022 21:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  11 APR 2022 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -231,12 +231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <22> on input line 31.
-
-Overfull \hbox (76.97173pt too wide) detected at line 31
-[]
- []
-
+LaTeX Font Info:    Calculating math sizes for size <22> on input line 32.
 [1{C:/Users/chand/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
@@ -260,7 +255,7 @@ fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/chand/AppData/Local/Programs
 rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/chand/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/chand/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on assignment_2.pdf (1 page, 73207 bytes).
+Output written on assignment_2.pdf (1 page, 73222 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
