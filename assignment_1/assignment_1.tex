@@ -27,20 +27,21 @@ Simplify
 
 Let,
 \begin{align}
-	\vec{R}_\theta &= \myvec{\cos \theta &  -\sin \theta \\ \sin \theta & \cos \theta} \\[1em] \vec{I} &= \myvec{1 & 0 \\ 0 & 1} \\[1em] \vec{J} &= \myvec{0 & -1 \\ 1 & 0}
+	\vec{R_\theta} &= \myvec{\cos \theta &  -\sin \theta \\ \sin \theta & \cos \theta} \\[1em] \vec{I} &= \myvec{1 & 0 \\ 0 & 1} \\[1em] \vec{J} &= \myvec{0 & -1 \\ 1 & 0}
 \end{align}\\
 
 The matrix expression in the question can be written as
 
 \begin{equation}
-	\left(\vec{R}_A^T * \myvec{\vec{J} & \vec{I}}\right) \myvec{\sin A \\ \cos A}
+	\left(\vec{R_A}^T \myvec{\vec{R_{\frac{\pi}{2}}} & \vec{R_0}}\right) \myvec{\sin A \\ \cos A}
 \end{equation}\\
 
 Taking dot product of the vectors
 
-\begin{equation}
-	\myvec{\sin^2 A &  -\sin A\cos A \\ \sin A\cos A & \sin^2 A} +\myvec{\cos^2 A & \cos A\sin A \\ -\cos A\sin A & \cos^2 A}
-\end{equation}\\
+\begin{align}
+	& \myvec{\sin^2 A &  -\sin A\cos A \\ \sin A\cos A & \sin^2 A} \nonumber \\ 
+	& + \myvec{\cos^2 A & \cos A\sin A \\ -\cos A\sin A & \cos^2 A}
+\end{align}\\
 
 Adding the matrices
 
