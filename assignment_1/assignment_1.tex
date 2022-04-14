@@ -13,7 +13,7 @@
 
 \maketitle
 
-{\section {Question 3 (a) \newline}}
+\section {Question 3 (a) \newline}
 
 {\large \underline{Question}:\newline}
 
@@ -32,16 +32,18 @@ Let,
 
 The matrix expression in the question can be written as
 
-\begin{equation}
-	\left(\vec{R_A}\!^\top \myvec{\vec{R_{\frac{\pi}{2}}} & \vec{R_0}}\right) \cdot \myvec{\sin A & \cos A}
-\end{equation}\\
+\begin{align}
+	&\left(\vec{R_A}\!^\top \myvec{\vec{R_{\frac{\pi}{2}}} & \vec{R_0}}\right) \cdot \myvec{\sin A & \cos A} \\[1em]
+	=& \myvec{\vec{R_A}\!^\top \, \vec{R_{\frac{\pi}{2}}} & \vec{R_A}\!^\top \, \vec{R_0}} \cdot \myvec{\sin A & \cos A} \\[1em]
+	=& \, \sin A \left(\vec{R_A}\!^\top \, \vec{R_{\frac{\pi}{2}}}\right) + \cos A \left( \vec{R_A}\!^\top \, \vec{R_0}\right)
+\end{align}\\
 
-Simplifying the vectors and taking their dot\\ product
+Multiplying the matrices
 
 \begin{multline}
 	\myvec{\sin^2 A &  -\sin A\cos A \\ \sin A\cos A & \sin^2 A} \\ 
 	+ \myvec{\cos^2 A & \cos A\sin A \\ -\cos A\sin A & \cos^2 A}
-\end{multline}\\
+\end{multline}\\\\
 
 Adding the matrices
 
