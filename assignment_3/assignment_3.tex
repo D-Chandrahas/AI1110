@@ -2,6 +2,15 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\def\inputGnumericTable{}
 
 \begin{document}
 \title{\textbf{AI1110 Assignment 3} }
@@ -17,14 +26,9 @@ The frequency distribution of their unit place digit (for example, in the number
 the unit place digit is 3) is given in the table below.
 
 \begin{table}[h!]
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-		\hline
-		Digit & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
-		\hline
-		Frequency & 22 & 26 & 22 & 22 & 20 & 10 & 14 & 28 & 16 & 20 \\
-		\hline
-	\end{tabular}
+	\input{tables/prob_dist.tex}
 \end{table}
+
 
 Without looking at the page, the pencil is placed on one of these numbers, i.e., the
 number is chosen at random. What is the probability that the digit in its unit place is 6? \\
