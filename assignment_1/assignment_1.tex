@@ -25,33 +25,26 @@ Simplify
 
 {\large \underline{Solution}:}\\
 
-Let,
+Substituting $A = \pi/4$ in the question,
+
 \begin{equation}
-	\vec{R_\theta} = \myvec{\cos \theta &  -\sin \theta \\ \sin \theta & \cos \theta}
+	\sin \tfrac{\pi}{4}\myvec{\sin \tfrac{\pi}{4} &  -\cos \tfrac{\pi}{4} \\ \cos \tfrac{\pi}{4} & \sin \tfrac{\pi}{4}} + \cos \tfrac{\pi}{4} \myvec{\cos \tfrac{\pi}{4} &  \sin \tfrac{\pi}{4} \\ -\sin \tfrac{\pi}{4} & \cos \tfrac{\pi}{4}}
 \end{equation}\\
 
-The matrix expression in the question can be written as
-
-\begin{align}
-	&\left(\vec{R_A}\!^\top \myvec{\vec{R_{\frac{\pi}{2}}} & \vec{R_0}}\right) \myvec{\sin A \\ \cos A} \\[1em]
-	=& \myvec{\vec{R_A}\!^\top \, \vec{R_{\frac{\pi}{2}}} & \vec{R_A}\!^\top \, \vec{R_0}} \myvec{\sin A \\ \cos A} \\[1em]
-	=& \, \sin A \left(\vec{R_A}\!^\top \, \vec{R_{\frac{\pi}{2}}}\right) + \cos A \left( \vec{R_A}\!^\top \, \vec{R_0}\right)
-\end{align}\\
-
-Multiplying the matrices
+Simplifying the expression,
 
 \begin{multline}
-	\myvec{\sin^2 A &  -\sin A\cos A \\ \sin A\cos A & \sin^2 A} \\ 
-	+ \myvec{\cos^2 A & \cos A\sin A \\ -\cos A\sin A & \cos^2 A}
+	\myvec{\sin^2 \tfrac{\pi}{4} &  -\sin \tfrac{\pi}{4}\cos \tfrac{\pi}{4} \\[1ex] \sin \tfrac{\pi}{4}\cos \tfrac{\pi}{4} & \sin^2 \tfrac{\pi}{4}} \\[1ex] 
+	+ \myvec{\cos^2 \tfrac{\pi}{4} & \cos \tfrac{\pi}{4}\sin \tfrac{\pi}{4} \\[1ex] -\cos \tfrac{\pi}{4}\sin \tfrac{\pi}{4} & \cos^2 \tfrac{\pi}{4}}
 \end{multline}\\
 
-Adding the matrices
+Adding the matrices,
 
 \begin{equation}
-	\myvec{\sin^2 A + \cos^2 A &  -\sin A \cos A +\cos A \sin A \\ \sin A \cos A -\cos A \sin A & \sin^2 A + \cos^2 A}
-\end{equation}\\
+	\myvec{\sin^2 \tfrac{\pi}{4} + \cos^2 \tfrac{\pi}{4} &  -\sin \tfrac{\pi}{4} \cos \tfrac{\pi}{4} +\cos \tfrac{\pi}{4} \sin \tfrac{\pi}{4} \\[1ex] \sin \tfrac{\pi}{4} \cos \tfrac{\pi}{4} -\cos \tfrac{\pi}{4} \sin \tfrac{\pi}{4} & \sin^2 \tfrac{\pi}{4} + \cos^2 \tfrac{\pi}{4}}
+\end{equation}
 
-Simplifying the elements finally gives
+Simplifying the elements finally gives,
 
 \begin{equation}
 	\myvec{1 & 0 \\ 0 & 1}
