@@ -1,0 +1,49 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\def\inputGnumericTable{}
+
+\begin{document}
+\title{\textbf{AI1110 Assignment 4} }
+\author{\textbf{Dondapati Chandrahas Reddy}\\\textbf{AI21BTECH11010}\\ CBSE 9th Probability}
+\maketitle
+
+{\section{Example 6}}
+
+{\large \underline{Question}:}\\
+
+A tyre manufacturing company kept a record of the distance covered
+before a tyre needed to be replaced. The table shows the results of 1000 cases.
+
+\begin{table}[h!]
+	\input{tables/table1.tex}
+\end{table}
+
+If you buy a tyre of this company, what is the probability that :\\
+(i) it will need to be replaced before it has covered 4000 km? \\
+(ii) it will last more than 9000 km? \\
+(iii) it will need to be replaced after it has covered somewhere between 4000 km and 14000 km? \\
+
+{\large \underline{Solution}:}\\
+
+Let $X=$ the distance covered by a tyre before replacement.
+
+\begin{align}
+	&\text{(i) } P(X < 4000) = \dfrac{20}{1000} = 0.02\\[1em]
+	&\text{(ii) } P(X > 9000) = \dfrac{325}{1000} + \dfrac{445}{1000} = 0.77\\[1em]
+	&\text{(iii) } P(4000 \leq X \leq 14000) = \dfrac{210}{1000} + \dfrac{325}{1000} \\[1ex]
+	& \hspace{136pt} = 0.535
+\end{align}\\
+
+The python code \texttt{codes/example\_6.py} produces a theoritical distribution
+
+\end{document}
