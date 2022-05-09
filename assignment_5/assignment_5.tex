@@ -1,0 +1,44 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\def\inputGnumericTable{}
+
+\begin{document}
+\title{\textbf{AI1110 Assignment 5} }
+\author{\textbf{Dondapati Chandrahas Reddy}\\\textbf{AI21BTECH11010}\\ CBSE 11th Probability}
+\maketitle
+
+{\section{Example 4}}
+
+{\large \underline{Question}:}\\
+
+A coin is tossed. If it shows head, we draw a ball from a bag consisting of
+3 blue and 4 white balls; if it shows tail we throw a die. Describe the sample space of
+this experiment.\\
+
+{\large \underline{Solution}:}\\
+
+Let the elements of the sample space be denoted by $(X,Y)$ where $X$ is outcome of the first part of the experiment and $Y$ is outcome of the second part of the experiment.\\
+
+$X$ is an element of the set $\{H,T\}$ where $H$ denotes head and $T$ denotes tail.\\
+
+$Y$ is an element of the set $\{B,W,D_1,D_2,D_3,D_4,D_5,D_6\}$ where $B$ denotes blue ball, $W$ denotes white ball, $D_i$ denotes die with number $i$ on top.\\
+
+The sample space can be represented as 
+
+\begin{table}[h!]
+	\input{tables/table1.tex}
+\end{table}
+
+The python code \texttt{codes/example\_4.py} produces a theoretical probability distribution
+
+\end{document}
