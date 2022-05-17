@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  15 MAY 2022 12:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  17 MAY 2022 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1036,25 +1036,32 @@ Overfull \hbox (74.29106pt too wide) has occurred while \output is active
 
 [2
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+] (tables/table1.tex
+\gnumericTableWidth=\skip75
+\gnumericTableWidthComplete=\skip76
+\gnumericMultiRowLength=\skip77
+\gnumericColA=\skip78
+LaTeX Font Info:    Trying to load font information for U+msa on input line 147
+.
 
- (C:\Users\chand\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\chand\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 147
+.
 
 (C:\Users\chand\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 54.
+ut line 147.
 
 (C:\Users\chand\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathk
 erncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
+)
+\gnumericColB=\skip79
 )
 Overfull \hbox (74.29106pt too wide) has occurred while \output is active
  [][]  
@@ -1068,6 +1075,13 @@ Overfull \hbox (74.29106pt too wide) has occurred while \output is active
  []
 
 [4
+
+]
+Overfull \hbox (74.29106pt too wide) has occurred while \output is active
+ [][]  
+ []
+
+[5
 
 ]
 \tf@nav=\write6
@@ -1084,10 +1098,10 @@ Package rerunfilecheck Info: File `assignment_6.out' has not changed.
 (rerunfilecheck)             Checksum: 6001D685FF9666FE226D1ED69588FCF8;104.
  ) 
 Here is how much of TeX's memory you used:
- 22158 strings out of 478582
- 439460 string characters out of 2844344
- 689038 words of memory out of 3000000
- 39853 multiletter control sequences out of 15000+600000
+ 22186 strings out of 478582
+ 439944 string characters out of 2844344
+ 689069 words of memory out of 3000000
+ 39874 multiletter control sequences out of 15000+600000
  479016 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,122p,439b,579s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1100,9 +1114,9 @@ TeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/chand/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/chand/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ch
 and/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on assignment_6.pdf (4 pages, 117332 bytes).
+Output written on assignment_6.pdf (5 pages, 123329 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
