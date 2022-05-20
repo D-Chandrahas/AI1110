@@ -1,0 +1,48 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\def\inputGnumericTable{}
+
+\begin{document}
+\title{\textbf{AI1110 Assignment 6} }
+\author{\textbf{Dondapati Chandrahas Reddy}\\\textbf{AI21BTECH11010}\\ CBSE 12th Probability}
+\maketitle
+
+{\section{Ex 13.2 Q13}}
+
+{\large \underline{Question}}:\\
+
+Two balls are drawn at random with replacement from a box containing 10 black
+and 8 red balls. Find the probability that\\
+(i) both balls are red.\\
+(ii) first ball is black and second is red.\\
+(iii) one of them is black and other is red.\\
+
+{\large \underline{Solution}:}\\
+
+Let $X=$ outcome of 1st draw and $Y=$ outcome of 2nd draw.\\
+
+$X$,$Y$ are elements of set $\{B,R\}$ where $B$ stands for black ball and $R$ stands for red ball.
+
+\begin{align}
+	&\text{(i) } P(X=R \cap Y=R) = \dfrac{8}{18} \times \dfrac{8}{18}  = \dfrac{16}{81}\\[1em]
+	&\text{(ii) } P(X=B \cap Y=R) = \dfrac{10}{18} \times \dfrac{8}{18}  = \dfrac{20}{81}\\[1em]
+	\begin{split}
+	&\text{(iii) } P(X=R \cap Y=B) + P(X=B \cap Y=R)\\[1ex]
+	& \hspace{120pt} = \dfrac{8}{18} \times \dfrac{10}{18} + \dfrac{10}{18} \times \dfrac{8}{18}\\[1ex]
+	&  \hspace{120pt} = \dfrac{40}{81} 
+	\end{split}
+\end{align}\\
+
+The python code \texttt{codes/Q13.py} produces a theoretical probability distribution.
+
+\end{document}
