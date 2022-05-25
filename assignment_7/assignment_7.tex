@@ -11,6 +11,8 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}
 \def\inputGnumericTable{}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
 
 \usetheme{CambridgeUS}
 
@@ -60,10 +62,10 @@ Suppose that $x_u$ is the $u$ percentile of the random variable $x$, that is, $F
 \end{frame}
 
 
-%\begin{frame}{Codes}
-	
-%The python code \texttt{codes/Q13.py} produces a theoretical probability distribution.
-
-%\end{frame}
+\begin{frame}{Example}
+	\includegraphics[scale=0.595]{fig1.png}
+	Example: Let $u = 0.8$ , From above equations: $x_{0.8} = 0.716, x_{0.2} = -0.716 $\\
+	Hence Verified.
+\end{frame}
 
 \end{document}
