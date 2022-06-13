@@ -1,0 +1,74 @@
+\documentclass{beamer}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\def\inputGnumericTable{}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+
+\usetheme{CambridgeUS}
+
+\title{\textbf{AI1110 \\ Assignment 9} }
+\author{\textbf{Dondapati Chandrahas Reddy}\\\textbf{AI21BTECH11010}}
+
+\begin{document}
+	
+
+\begin{frame}
+	\titlepage 
+\end{frame}
+
+
+\section{Papoulis Exercise 7.26}
+\begin{frame}{Question(Papoulis Exercise 7.26)}
+	Using the Cauchy criterion, show that a sequence $x_n$ tends to a limit in the MS sense iff the limit of $E(x_n,x_m)$ as $n,m\rightarrow \infty$ exists.
+\end{frame}
+
+\begin{frame}{Solution}
+	If $E\{x_n,x_m\} \rightarrow  a $ as $n,m \rightarrow  \infty$, then, given $\epsilon>0$, we can find a number $\theta_n$ such that, if $n,m > 0$
+	\begin{align}
+		E\{x_n,x_m\} = a + \theta(n,m) \dots (|\theta| < \epsilon)
+	\end{align}
+	Hence,
+	\begin{align}
+		E\{(x_n - x_m)^2\} = &E\{x_n ^2\} + E\{x_m ^2\} - 2E\{x_nx_m\} \\
+		= &a + \theta_1 + a + \theta_2 - 2(a + \theta_3) \\
+		= &\theta_1 + \theta_2 - 2\theta_3
+	\end{align}
+	and since it $|\theta_1 + \theta_2 - 2\theta_3| < 4\epsilon$ for any $\epsilon$, it follows that $E\{(x_n - x_m)^2\}\rightarrow 0$, hence (Cauchy) $x_n$ tends to a limit.
+\end{frame}
+
+\begin{frame}
+	Conversly, \\
+	If $x_n \rightarrow x$ in the MS sense, then $E\{(x_n - x)^2\} \rightarrow 0$. \\
+	Furthermore,
+	\begin{align}
+		E\{x_n ^2\} &\rightarrow E\{x^2\} \\
+		E\{xx_n\} &\rightarrow E\{x^2\} \\[2em]
+		E^2\{x_n ^2 - x^2\} &= E^2 \{(x_n - x)(x_n + x)\} \\
+		&\leq E\{(x_n - x)^2\}E\{(x_n + x)^2\} \rightarrow 0 \\
+		E^2\{x(x_n -x)\} &\leq E\{x^2\}E{(x_n - x)^2} \rightarrow 0
+	\end{align}\\
+\end{frame}
+
+\begin{frame}
+	Similarly, 
+	\begin{align}
+		E\{(x_n - x)(x_m - x)\} \rightarrow 0
+	\end{align}
+	Hence,
+	\begin{align}
+		E\{x_nx_m\} + E\{x^2\} - E{xx_n} - E{xx_m} \rightarrow 0 
+	\end{align}
+	Combining, we conclude that $E\{x_nx_m\} \rightarrow E\{x^2\}$.
+\end{frame}
+
+\end{document}
