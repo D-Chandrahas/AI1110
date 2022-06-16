@@ -1,0 +1,55 @@
+\documentclass{beamer}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\usepackage{bigints}
+\def\inputGnumericTable{}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\DeclareMathOperator{\de}{d\!}
+
+\usetheme{CambridgeUS}
+
+\title{\textbf{AI1110 \\ Assignment 10} }
+\author{\textbf{Dondapati Chandrahas Reddy}\\\textbf{AI21BTECH11010}}
+
+\begin{document}
+	
+
+\begin{frame}
+	\titlepage 
+\end{frame}
+
+
+\section{Papoulis Exercise 11.9}
+\begin{frame}{Question(Papoulis Exercise 11.9)}
+	Find the mean of the integral\\[1em]
+	\hspace{5em}\[X(\omega) = \bigintssss\limits_{-a}^{a}\! \left[5\cos3t + v(t)\right] e^{-j\omega t}\de t\]\\[1ex]
+	\hspace{2em}if $E[v(t)] = 0$
+\end{frame}
+
+\begin{frame}{Solution}
+	\begin{align}
+		X(\omega) &= \bigintssss\limits_{-a}^{a}\! \left[5\cos3t + v(t)\right] e^{-j\omega t}\de t\\
+		&= \bigintssss\limits_{-a}^{a}\! 5\cos(3t) e^{-j\omega t}\de t \, + \, \bigintssss\limits_{-a}^{a}\! v(t) e^{-j\omega t}\de t\\
+		&= \bigintssss\limits_{-a}^{a}\! 5\cos(3t) e^{-j\omega t}\de t \, + 0\\
+		&= \left.5\left(\dfrac{3\sin(3t)}{(-jw)^2+9} - \dfrac{jw\cos(3t)}{(-jw)^2+9}\right) e^{-j\omega t}\right|_{-a}^{a}
+	\end{align}
+\end{frame}
+
+\begin{frame}{Solution(Contd.)}
+	Solving eqn.4 we get,
+	\begin{align}
+		E\{X(\omega)\} = \dfrac{5\sin a (\omega - 3)}{\omega  - 3} + \dfrac{5\sin a (\omega + 3)}{\omega  + 3}
+	\end{align}
+\end{frame}
+
+\end{document}
