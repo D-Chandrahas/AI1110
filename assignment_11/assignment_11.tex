@@ -1,0 +1,61 @@
+\documentclass{beamer}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\usepackage{bigints}
+\def\inputGnumericTable{}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\DeclareMathOperator{\de}{d\!}
+
+\usetheme{CambridgeUS}
+
+\title{\textbf{AI1110 \\ Assignment 11} }
+\author{\textbf{Dondapati Chandrahas Reddy}\\\textbf{AI21BTECH11010}}
+
+\begin{document}
+	
+
+\begin{frame}
+	\titlepage 
+\end{frame}
+
+
+\section{Papoulis Exercise 15.3}
+\begin{frame}{Question(Papoulis Exercise 15.3)}
+	Find the stationary distribution $q_0, q_1 ,...$ for the Markov chain whose only nonzero stationary probabilities are\\[1em]
+	\hspace{4em} $p_{i,1} = \dfrac{i}{i+1} \hspace{2em} p_{i,i+1} = \dfrac{1}{i+1} \hspace{2em} i = 1,2,...$
+\end{frame}
+
+\begin{frame}{Solution}
+	\begin{align}
+		q_{i+1} =\,\, &p_{i,i+1}\,\, q_i = \dfrac{1}{i+1}q_i\\[1ex]
+		q_{i} = \,\, &p_{i-1,i}\,\, q_{i-1} = \dfrac{1}{i}q_{i-1}\\
+		& \vdots \nonumber\\
+		q_{1} = \,\, &p_{0,1}\,\, q_{0} = \dfrac{1}{1}q_{0}\\[1em]
+		\implies q_{i+1} =\,\, &\dfrac{q_0}{(i+1)!}
+	\end{align}
+\end{frame}
+
+\begin{frame}{Solution(Contd.)}
+	Summation of all probabilities equals one.
+	\begin{align}
+		\sum\limits_{k=1}^{\infty} q_k &=  q_0 \sum\limits_{k=1}^{\infty} \dfrac{1}{k!} = 1\\[1ex]
+		q_0e &= 1 \\[1ex]
+		\implies q_0 &= \dfrac{1}{e}
+	\end{align}
+	Therefore, the steady state probabilities are given by,\\
+	\begin{equation}
+		q_k = \dfrac{1}{e\,k!}
+	\end{equation}
+\end{frame}
+
+\end{document}
