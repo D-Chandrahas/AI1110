@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  20 JUN 2022 20:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  24 JUN 2022 10:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,7 +1056,32 @@ Overfull \hbox (11.55072pt too wide) has occurred while \output is active
 
 [2
 
-]
+] (tables/table1.tex
+\gnumericTableWidth=\skip75
+\gnumericTableWidthComplete=\skip76
+\gnumericMultiRowLength=\skip77
+\gnumericColA=\skip78
+\gnumericColB=\skip79
+\gnumericColC=\skip80
+\gnumericColD=\skip81
+\gnumericColE=\skip82
+\gnumericColF=\skip83
+\gnumericColG=\skip84
+
+
+Package hhline Warning: the character 2 ignored in \hhline argument
+(hhline)                 on input line 226.
+
+
+Package hhline Warning: the character 9 ignored in \hhline argument
+(hhline)                 on input line 226.
+
+
+Overfull \hbox (7.59737pt too wide) in alignment at lines 168--323
+ [] [] [] [] [] [] [] 
+ []
+
+)
 Overfull \hbox (11.55072pt too wide) has occurred while \output is active
  [][]  
  []
@@ -1069,6 +1094,13 @@ Overfull \hbox (11.55072pt too wide) has occurred while \output is active
  []
 
 [4
+
+]
+Overfull \hbox (11.55072pt too wide) has occurred while \output is active
+ [][]  
+ []
+
+[5
 
 ]
 \tf@nav=\write6
@@ -1085,10 +1117,10 @@ Package rerunfilecheck Info: File `assignment_11.out' has not changed.
 (rerunfilecheck)             Checksum: 9F120A3B9399262022BCFFC9E3146FB6;159.
  ) 
 Here is how much of TeX's memory you used:
- 22238 strings out of 478582
- 440937 string characters out of 2844344
- 686297 words of memory out of 3000000
- 39932 multiletter control sequences out of 15000+600000
+ 22270 strings out of 478582
+ 441452 string characters out of 2844344
+ 712411 words of memory out of 3000000
+ 39957 multiletter control sequences out of 15000+600000
  476891 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,440b,579s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1105,9 +1137,9 @@ Users/chand/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8
 .pfb><C:/Users/chand/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><C:/Users/chand/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb>
-Output written on assignment_11.pdf (4 pages, 140039 bytes).
+Output written on assignment_11.pdf (5 pages, 150346 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
