@@ -208,7 +208,7 @@ columns=fullflexible
 
 
 \title{%Convex Optimization in Python
-	Random Numbers(Note: sec 2.5 var part and some Q function no built-in)
+	Random Numbers(Note: sec 2.5 last line and some Q function no built-in)
 }
 %\title{
 %	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
@@ -438,18 +438,14 @@ The mean is given by
 
 		\begin{align}
 			\text{var}\sbrak{X} &= E\sbrak{X^2} - \left(E\sbrak{X}\right)^2 \\
-			&= \int_{-\infty}^{\infty}x^2\frac{1}{\sqrt{2\pi}}\exp{\left(-\frac{x^2}{2}\right)}dx \label{eq:int} \\
-			&= \int_{0}^{\infty}\frac{2}{\sqrt{2\pi}}\sqrt{2t}e^{-t}dt \\
-			&= \frac{2}{\sqrt{\pi}}\Gamma\left(\frac{3}{2}\right) \\
-			&= \frac{1}{\sqrt{\pi}}\Gamma\left(\frac{1}{2}\right) = 1
-			\label{eq:gau-var}
+			&=\int_{-\infty}^{\infty}x^2\frac{1}{\sqrt{2\pi}}\exp{\left(-\frac{x^2}{2}\right)}dx\\
+			\begin{split}
+			 &= x\int_{-\infty}^{\infty}x\frac{1}{\sqrt{2\pi}}\exp{\left(-\frac{x^2}{2}\right)}dx \\&\hspace{3em} -\int_{-\infty}^{\infty}\int x\frac{1}{\sqrt{2\pi}} \exp{\left(-\frac{x^2}{2}\right)}dx
+			\end{split}\\
+			&= \left.-xe^{-\frac{x^2}{2}}\right|_{-\infty}^{\infty} + \int_{-\infty}^{\infty} e^{-\frac{x^2}{2}}\\
 		\end{align}
-where we have used $t = \frac{x^2}{2}$ and so $dt = xdx$. We have also used the gamma function given as
-\begin{align}
-	\Gamma(n) = \int_{-\infty}^{\infty}x^{n - 1}e^{-x}dx \\
-	\Gamma(n) = (n - 1)\Gamma(n - 1)\ \text{for $n > 1$}
-\end{align}
-and the fact that $\Gamma(1/2) = \sqrt{\pi}$.
+Substituting limits we get $E[x^2] = 1$
+
 
 \end{enumerate}
 \section{From Uniform to Other}
@@ -493,15 +489,15 @@ is monotonically increasing in [0, 1] . Hence, it is invertible and the inverse 
 		\end{equation}
 	
 		\begin{align}
-			F_V(v) &= \pr{V < v}\\
-			&= \pr{f(U) < v}\\
-			&= \pr{U < f^{-1}(v)}\\
-			&= \pr{U < 1 - \exp{\left(-\frac{v}{2}\right)}}\\
-			&= F_U\left(1 - \exp{\left(-\frac{v}{2}\right)}\right) \\
-			\implies F_V(v) &= 
+			F_V(x) &= \pr{V < x}\\
+			&= \pr{f(U) < x}\\
+			&= \pr{U < f^{-1}(x)}\\
+			&= \pr{U < 1 - \exp{\left(-\frac{x}{2}\right)}}\\
+			&= F_U\left(1 - \exp{\left(-\frac{x}{2}\right)}\right) \\
+			\implies F_V(x) &= 
 			\begin{cases}
-				0 & v < 0 \\
-				1 - \exp{\left(-\frac{v}{2}\right)} & v \geq 0
+				0 & x < 0 \\
+				1 - \exp{\left(-\frac{x}{2}\right)} & x \geq 0
 			\end{cases}
 		\end{align}
 
