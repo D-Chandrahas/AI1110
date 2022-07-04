@@ -2,10 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-#if using termux
-#import subprocess
-#import shlex
-#end if
+
 
 
 
@@ -19,19 +16,22 @@ for i in range(0,30):
 	err_n = np.size(err_ind) #computing the probability
 	err.append(err_n/simlen) #storing the probability values in a list
 
-	
-plt.plot(x.T,err)#plotting the CDF
+def F(x):
+        if x<0:
+                return 0
+        else :
+                return 1 - np.exp(-x/2)
+
+y = [F(i) for i in x]
+
+
+plt.plot(x,err,'o',label = "numerical")#plotting the CDF
+plt.plot(x,y,label = "theory")
 plt.grid() #creating the grid
+plt.legend()
 plt.xlabel('$x$')
 plt.ylabel('$F_X(x)$')
 
-#if using termux
-# plt.savefig('../figs/uni_cdf.pdf')
-# plt.savefig('../figs/uni_cdf.eps')
-# subprocess.run(shlex.split("termux-open ../figs/uni_cdf.pdf"))
-#if using termux
-#plt.savefig('../figs/gauss_cdf.pdf')
-#plt.savefig('../figs/gauss_cdf.eps')
-#subprocess.run(shlex.split("termux-open ../figs/gauss_cdf.pdf"))
-#else
+plt.savefig('../figs/v_cdf.png')
+
 plt.show() #opening the plot window
