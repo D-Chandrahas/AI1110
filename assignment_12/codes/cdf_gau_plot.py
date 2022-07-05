@@ -17,7 +17,12 @@ for i in range(0,30):
 def Q(x):
         return math.erfc(x/(2**(1/2)))/2
 
-y = [1-Q(i) for i in x]
+def F(x):
+        return 1-Q(x)
+
+vec_F = np.vectorize(F)
+
+y = vec_F(x)
 	
 plt.plot(x,err,'o',label = "numerical")#plotting the CDF
 plt.plot(x,y,label="theory")

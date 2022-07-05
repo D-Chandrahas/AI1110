@@ -1,7 +1,7 @@
 #Importing numpy, scipy, mpmath and pyplot
 import numpy as np
 import matplotlib.pyplot as plt
-
+import scipy
 
 
 
@@ -22,7 +22,9 @@ def F(x):
         else :
                 return 1 - np.exp(-x/2)
 
-y = [F(i) for i in x]
+vec_F = scipy.vectorize(F,otypes=[float])
+
+y = vec_F(x)
 
 
 plt.plot(x,err,'o',label = "numerical")#plotting the CDF

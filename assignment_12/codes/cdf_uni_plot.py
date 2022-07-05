@@ -23,7 +23,9 @@ def F(x):
         else :
                 return x
 
-y = [F(i) for i in x]
+vec_F = np.vectorize(F,otypes=[float])
+
+y = vec_F(x)
 
 plt.plot(x,err,'o',label = "numerical")#plotting the CDF
 plt.plot(x,y,label = "theory")
