@@ -20,7 +20,7 @@ def Q(x):
 def F(x):
         return 1-Q(x)
 
-vec_F = np.vectorize(F)
+vec_F = np.vectorize(F,otypes=[float])
 
 y = vec_F(x)
 	
